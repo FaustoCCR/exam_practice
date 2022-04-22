@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableRow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="clickRow">
+
+    <TextView
+        android:id="@+id/tdCedula"
+        android:layout_width="0dp"
+        android:layout_weight="3.5"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cell_border"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="5dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tdEmpleado"
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cell_border"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="5dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tdHireDate"
+        android:layout_width="0dp"
+        android:layout_weight="4.1"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cell_border"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="5dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tdSalario"
+        android:layout_width="0dp"
+        android:layout_weight="3.1"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:background="@drawable/cell_border"
+        android:padding="5dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tdDiscapacidad"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:background="@drawable/cell_border"
+        android:padding="5dp"
+        android:text="TextView" />
+</TableRow>

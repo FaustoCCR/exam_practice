@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Practica_Examen</string>
+    <string name="tagCreateDB">Crear BD</string>
+
+    <!--Hints-->
+    <string name="hintcedula">Cédula</string>
+    <string name="hintnombres">Nombre</string>
+    <string name="hintapellido">Apellido</string>
+    <string name="hintHireDate">Fecha de Contrato</string>
+    <string name="hintSalario">Salario</string>
+    <string name="hintDiscapacidad">Discapacidad</string>
+    <string name="hinthorario">Horario</string>
+
+
+    <!--Context Descriptions Buttons-->
+    <string name="contextAdd">Agregar</string>
+    <string name="contextEdit">Editar</string>
+    <string name="contextDelete">Eliminar</string>
+    <string name="contextNext">Siguiente</string>
+
+
+    <string name="tagPercent">%</string>
+
+
+    <!--TABLE-->
+    <!--COLUMS-->
+    <string name="cCedula">Cedula</string>
+    <string name="cEmpleado">Empleado</string>
+    <string name="cHireDate">F.Contrato</string>
+    <string name="cSalario">Salario</string>
+    <string name="cDiscapacidad">Disc</string>
+
+    <string name="btnTakePicture">Tomar Fotografia</string>
+</resources>

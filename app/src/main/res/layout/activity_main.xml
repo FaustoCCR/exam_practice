@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/iBtnCreateDb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/tagCreateDB"
+            app:srcCompat="@drawable/data_storage_ic" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tagCreateDB"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textStyle="bold"/>
+
+        <ImageButton
+            android:id="@+id/iBtnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="175dp"
+            android:backgroundTint="#9AC6E2"
+            android:minHeight="48dp"
+            app:srcCompat="@drawable/ic_arrow"
+            android:contentDescription="@string/contextNext"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/txtCedula"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="@string/hintcedula"
+                android:inputType="number"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/txtNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="@string/hintnombres"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/txtApellido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="@string/hintapellido"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/txtHire_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="@string/hintHireDate"
+                android:inputType="date"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/txtSalario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="@string/hintSalario"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/txtDiscapacidad"
+                    android:layout_width="0dp"
+                    android:layout_weight="8"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="sans-serif-condensed"
+                    android:hint="@string/hintDiscapacidad"
+                    android:inputType="number"
+                    android:minHeight="48dp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tagPercent"
+                    android:textAlignment="center"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/txtHorario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="@string/hinthorario"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:padding="15dp">
+
+            <ImageButton
+                android:id="@+id/iBtnGuardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_menu_add"
+                android:contentDescription="@string/contextAdd"
+                android:backgroundTint="@color/cardview_dark_background"/>
+
+            <ImageButton
+                android:id="@+id/iBtnEditar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_menu_edit"
+                android:contentDescription="@string/contextEdit"
+                android:backgroundTint="@color/cardview_dark_background"/>
+
+            <ImageButton
+                android:id="@+id/iBtnEliminar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_menu_delete"
+                android:contentDescription="@string/contextDelete"
+                android:backgroundTint="@color/cardview_dark_background"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#9AC6E2"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/tvCedula"
+            android:layout_width="0dp"
+            android:layout_weight="3.5"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="7dp"
+            android:text="@string/cCedula"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvEmpleado"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="7dp"
+            android:text="@string/cEmpleado"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvHireDate"
+            android:layout_width="0dp"
+            android:layout_weight="4.1"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="7dp"
+            android:text="@string/cHireDate"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSalario"
+            android:layout_width="0dp"
+            android:layout_weight="3.1"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="7dp"
+            android:text="@string/cSalario"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDiscapacidad"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="7dp"
+            android:text="@string/cDiscapacidad"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tlempleados"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
+</LinearLayout>
